@@ -1,0 +1,10 @@
+.DS_Store
+log/*.log
+tmp
+tmp/**/*
+config/database.yml
+db/*.sqlite3
+public/waveform/*
+public/upload/*
+actionscript/*.swf
+*.swp

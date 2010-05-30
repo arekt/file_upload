@@ -1,0 +1,4 @@
+Exercise with file downloads/uploads
+
+- I use flash application to check file size before it will be send to server.
+- Files are served by gridfs/metal application, copy/paste from Michael post on MongoMapper mailing list "[MongoMapper] Re: Having Issues with MongoMapper and rack/gridfs ...  rabble rabble rabble"

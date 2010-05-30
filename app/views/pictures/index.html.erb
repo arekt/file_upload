@@ -1,0 +1,24 @@
+<%= javascript_include_tag "FABridge","jquery-1.4.2.min","jquery.swfobject.1-0-9.min", "application" %>
+
+<h1>Listing pictures</h1>
+
+<div id="fu"> </div>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @pictures.each do |picture| %>
+  <tr>
+    <td><%=h picture.name %></td>
+    <td><%= link_to 'Show', picture %></td>
+    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+    <td><%= link_to 'Destroy', picture, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to_function 'New picture', "browse();" %>
